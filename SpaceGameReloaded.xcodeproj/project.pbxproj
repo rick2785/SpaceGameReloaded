@@ -15,6 +15,11 @@
 		20F7B4901DABCC0E0014FE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B48E1DABCC0E0014FE18 /* Main.storyboard */; };
 		20F7B4921DABCC0E0014FE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B4911DABCC0E0014FE18 /* Assets.xcassets */; };
 		20F7B4951DABCC0E0014FE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B4931DABCC0E0014FE18 /* LaunchScreen.storyboard */; };
+		20F7B49E1DABCCE50014FE18 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B49C1DABCCE50014FE18 /* explosion.mp3 */; };
+		20F7B49F1DABCCE50014FE18 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B49D1DABCCE50014FE18 /* torpedo.mp3 */; };
+		20F7B4A31DABCDD80014FE18 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B4A21DABCDD80014FE18 /* spark.png */; };
+		20F7B4A61DABCE270014FE18 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B4A41DABCE270014FE18 /* Explosion.sks */; };
+		20F7B4A71DABCE270014FE18 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 20F7B4A51DABCE270014FE18 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		20F7B4911DABCC0E0014FE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F7B4941DABCC0E0014FE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F7B4961DABCC0E0014FE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F7B49C1DABCCE50014FE18 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		20F7B49D1DABCCE50014FE18 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		20F7B4A21DABCDD80014FE18 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		20F7B4A41DABCE270014FE18 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		20F7B4A51DABCE270014FE18 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +73,14 @@
 				20F7B4841DABCC0E0014FE18 /* AppDelegate.swift */,
 				20F7B4861DABCC0E0014FE18 /* GameScene.sks */,
 				20F7B4881DABCC0E0014FE18 /* Actions.sks */,
+				20F7B4A41DABCE270014FE18 /* Explosion.sks */,
+				20F7B4A51DABCE270014FE18 /* Starfield.sks */,
+				20F7B4A21DABCDD80014FE18 /* spark.png */,
 				20F7B48A1DABCC0E0014FE18 /* GameScene.swift */,
 				20F7B48C1DABCC0E0014FE18 /* GameViewController.swift */,
 				20F7B48E1DABCC0E0014FE18 /* Main.storyboard */,
+				20F7B49C1DABCCE50014FE18 /* explosion.mp3 */,
+				20F7B49D1DABCCE50014FE18 /* torpedo.mp3 */,
 				20F7B4911DABCC0E0014FE18 /* Assets.xcassets */,
 				20F7B4931DABCC0E0014FE18 /* LaunchScreen.storyboard */,
 				20F7B4961DABCC0E0014FE18 /* Info.plist */,
@@ -133,11 +148,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F7B49F1DABCCE50014FE18 /* torpedo.mp3 in Resources */,
+				20F7B4A31DABCDD80014FE18 /* spark.png in Resources */,
+				20F7B4A71DABCE270014FE18 /* Starfield.sks in Resources */,
+				20F7B49E1DABCCE50014FE18 /* explosion.mp3 in Resources */,
 				20F7B4901DABCC0E0014FE18 /* Main.storyboard in Resources */,
 				20F7B4871DABCC0E0014FE18 /* GameScene.sks in Resources */,
 				20F7B4921DABCC0E0014FE18 /* Assets.xcassets in Resources */,
 				20F7B4951DABCC0E0014FE18 /* LaunchScreen.storyboard in Resources */,
 				20F7B4891DABCC0E0014FE18 /* Actions.sks in Resources */,
+				20F7B4A61DABCE270014FE18 /* Explosion.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +293,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XC48HTB69A;
 				INFOPLIST_FILE = SpaceGameReloaded/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rickeyHrabowskie.SpaceGameReloaded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -286,10 +308,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XC48HTB69A;
 				INFOPLIST_FILE = SpaceGameReloaded/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rickeyHrabowskie.SpaceGameReloaded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
